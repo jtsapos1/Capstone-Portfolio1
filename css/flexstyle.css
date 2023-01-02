@@ -102,6 +102,29 @@ img {
 	color: #093a58;
 }
 
+.visit-site {
+	display: inline-block;
+	border: 1px solid #000;
+	padding: 10px 15px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #000;
+	transition: 0.2s all ease;
+	font-weight: 700;
+}
+
+.visit-site:active,
+.visit-site:focus,
+.visit-site:hover {
+	outline: none;
+}
+
+.visit-site:hover {
+	color: #fff;
+	text-decoration: none;
+	background: #000;
+}
+
 /* ---- Layout Containers ---- */
 
 .main-header {
@@ -156,6 +179,10 @@ img {
 .tagline {
 	text-align: center;
 	padding: 3px 3px;
+}
+
+.interactive {
+	padding-top: 24px;
 }
 
 /* ================================= 
