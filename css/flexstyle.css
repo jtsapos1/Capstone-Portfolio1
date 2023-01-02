@@ -1,0 +1,333 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+html {
+	background-color: #d9e4ea;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+.row {
+	flex: 1;
+	background-color: white;
+	padding-top: 35px;
+}
+
+.portfolio-container {
+	background-color: white;
+	padding: 35px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name,
+.name-bottom {
+	font-size: 1.35em;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.bottom-nav {
+	margin-top: 5px;
+}
+
+.name a,
+.name-bottom,
+.main-nav a,
+.bottom-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a,
+.bottom-nav a {
+	font-size: .95em;
+	color: #093a58;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner {
+	color: #3a3a3a;
+	background: #d9e4ea;
+	padding: 3.2em 0;
+	margin: auto;
+	text-align: center;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.contact {
+	padding-top: 5%;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.main-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	max-width: 100vw;
+	background: #d9e4ea;
+	padding: 1em 0;
+	margin-top: 100px;
+}
+
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 300px;
+}
+
+.headline {
+	margin-bottom: 0;
+}
+
+.feat-img {
+	border-radius: 5px;
+}
+
+.tagline {
+	text-align: center;
+	padding: 3px 3px;
+}
+
+/* ================================= 
+  Media Queries to style the webpage for small mobile devices
+==================================== */
+
+@media (min-width: 768px) {
+
+	.main-header,
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.tagline {
+		font-size: 1.4em;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.main-header,
+	.row {
+		width: 80%;
+		max-width: 1150px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.one {
+		background-color: white;
+		max-width: 95%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	.two {
+		background-color: white;
+		max-width: 95%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	.three {
+		background-color: white;
+		max-width: 95%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+
+	.bottom-nav {
+		display: none;
+	}
+
+	.name-bottom {
+		margin-right: 175px;
+	}
+
+	#Back {
+		display: flex;
+		visibility: visible;
+		margin-top: 17px;
+		margin-inline-end: 5px;
+		justify-content: space-between;
+		text-transform: uppercase;
+	}
+
+}
+
+/* ================================= 
+  Media Queries to adjust devices for wider screens and devices using flexbox properties.
+==================================== */
+
+@media (min-width: 768px) {
+
+	.main-header,
+	.main-nav,
+	.bottom-nav,
+	.row {
+		display: flex;
+	}
+
+	.main-footer {
+		justify-content: space-around;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+		max-width: 100%;
+	}
+
+	.col {
+		flex: 1 50%;
+	}
+
+	.row {
+		flex-wrap: wrap;
+		width: 100%;
+		padding-bottom: 5%;
+	}
+
+	.portfolio {
+		margin: 0%;
+	}
+
+	.logo {
+		float: right;
+		width: 350px;
+		padding-top: 10px;
+		padding-right: 35px;
+		margin: auto;
+	}
+
+	.tagline {
+		text-align: left;
+		padding: 0px 400px 30px 40px;
+		border: 0;
+		margin: auto;
+	}
+
+	.contact {
+		padding-left: 22%;
+		padding-right: 22%;
+	}
+
+	#Back {
+		visibility: hidden;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100vw;
+	}
+
+	.col {
+		flex-basis: 30%;
+	}
+
+	.portfolio-container {
+		max-width: 98%;
+		margin: 0 auto;
+	}
+
+	.tagline {
+		text-align: left;
+		padding: 0px 500px 100px 30px;
+		margin-top: 15px;
+	}
+
+	.banner {
+		width: 100vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.logo {
+		float: right;
+		width: 450px;
+		padding-top: 20px;
+		padding-right: 70px;
+	}
+
+	.contact {
+		padding-left: 28%;
+		padding-right: 28%;
+	}
+
+}
