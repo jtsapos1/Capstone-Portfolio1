@@ -43,6 +43,10 @@ p {
 	margin-bottom: 1.8em;
 }
 
+.projects {
+	text-align: left;
+}
+
 h2,
 h3,
 a {
@@ -216,7 +220,7 @@ img {
 
 	.interactive {
 		padding-bottom: 0px;
-		padding-top: 13px;
+		padding-top: 9px;
 		margin-bottom: 0px;
 		margin-top: 0;
 	}
@@ -228,7 +232,7 @@ img {
 	.awesome1 {
 		margin-top: 0px;
 		margin-bottom: 0px;
-		padding-top: 5px;
+		padding-top: 27px;
 	}
 
 	.registration {
