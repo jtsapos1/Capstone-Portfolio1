@@ -21,6 +21,10 @@ body {
 	color: #3a3a3a;
 }
 
+.head-text {
+	padding: 10px 0;
+}
+
 .row {
 	flex: 1;
 	background-color: white;
