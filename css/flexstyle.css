@@ -6,12 +6,9 @@ html {
 }
 
 * {
-	/* margin: auto;
-	padding: 0; */
+	margin: auto;
 	box-sizing: border-box;
 	font-family: 'Varela Round', sans-serif;
-	/* transition: all .2s linear;
-	text-decoration: none; */
 }
 
 #menu body {
@@ -34,6 +31,7 @@ html {
 	flex: 1;
 	background-color: white;
 	padding-top: 35px;
+	text-align: center;
 }
 
 .portfolio-container {
@@ -54,6 +52,7 @@ p {
 
 .projects {
 	text-align: left;
+	padding-top: 10px;
 }
 
 h2,
@@ -81,14 +80,50 @@ img {
 
 /* ---- Navigation ---- */
 
+.folio {
+	color: lightblue;
+	font-size: 1.5rem;
+}
+
+span {
+	color: blueviolet;
+	font-size: 1rem;
+}
+
+/* CHANGE */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .name,
 .name-bottom {
 	font-size: 1.35em;
 	margin: 0;
 }
 
+
 .main-nav {
 	margin-top: 5px;
+	display: flex;
+}
+
+#menu.active {
+	left: 0px;
+}
+
+.hamburger {
+	display: none;
+}
+
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	background-color: #fff;
+	transition: all 0.3s ease-in-out;
 }
 
 .bottom-nav {
@@ -143,12 +178,14 @@ img {
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
+	width: 100%;
+	background: #1b1b1b;
 }
 
 .banner {
 	color: #3a3a3a;
 	background: #d9e4ea;
-	padding: 3.2em 0;
+	padding: 3.2em 10px;
 	margin: auto;
 	text-align: center;
 }
@@ -162,6 +199,10 @@ img {
 	padding-top: 5%;
 	padding-left: 25%;
 	padding-right: 25%;
+}
+
+section .row-form {
+	margin: 25px;
 }
 
 .main-footer {
@@ -225,6 +266,13 @@ img {
 	.tagline {
 		font-size: 1.4em;
 	}
+
+	.main-header {
+		margin: 0;
+		width: 100%;
+	}
+
+
 }
 
 @media (min-width: 1024px) {
@@ -275,22 +323,47 @@ img {
 
 @media (max-width: 768px) {
 
+	.hamburger {
+		display: block;
+		padding: 1rem;
+	}
+
+	.main-nav {
+		position: fixed;
+		left: -100%;
+		background: #1b1b1b;
+		flex-direction: column;
+		top: 60px;
+		height: 100%;
+		width: 60%;
+		transform: 0.3s;
+	}
+
+	.main-nav a {
+		font-size: 2rem;
+	}
+
+	.main-nav.active {
+		left: 0;
+	}
+
+
 	.one {
-		background-color: white;
+		background-color: #1b1b1b;
 		max-width: 95%;
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
 
 	.two {
-		background-color: white;
+		background-color: #1b1b1b;
 		max-width: 95%;
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
 
 	.three {
-		background-color: white;
+		background-color: #1b1b1b;
 		max-width: 95%;
 		margin: 0 auto;
 		margin-bottom: 10px;
