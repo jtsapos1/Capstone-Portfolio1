@@ -6,10 +6,15 @@ html {
 }
 
 * {
+	/* margin: auto;
+	padding: 0; */
 	box-sizing: border-box;
+	font-family: 'Varela Round', sans-serif;
+	/* transition: all .2s linear;
+	text-decoration: none; */
 }
 
-body {
+#menu body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -184,8 +189,16 @@ img {
 	border-radius: 5px;
 }
 
+.tagline #text {
+	font-size: 7px;
+}
+
+.banner {
+	text-align: left;
+}
+
 .tagline {
-	text-align: center;
+	text-align: left;
 	padding: 3px 3px;
 }
 
@@ -198,7 +211,7 @@ img {
 }
 
 /* ================================= 
-  Media Queries to style the webpage for small mobile devices
+  Media Queries to style the webpage for different views
 ==================================== */
 
 @media (min-width: 768px) {
@@ -259,6 +272,7 @@ img {
 	}
 }
 
+
 @media (max-width: 768px) {
 
 	.one {
@@ -301,6 +315,7 @@ img {
 	}
 
 }
+
 
 /* ================================= 
   Media Queries to adjust devices for wider screens and devices using flexbox properties.
@@ -348,7 +363,6 @@ img {
 	}
 
 	.tagline {
-		text-align: left;
 		padding: 0px 400px 30px 40px;
 		border: 0;
 		margin: auto;
