@@ -1,18 +1,19 @@
-	// select hamburger
-    const hamburger = document.querySelector('.hamburger')
-    // select main-nav
+	// select main-nav
     const mainNav = document.querySelector('.main-nav')
     // const menu = document.getElementById('menu')
     const toggle = document.getElementById('toggle');
 
     document.onclick = function (e) {
-        if (e.target.id !== 'mainNav' && e.target.id !== 'toggle') {
-            toggle.classList.remove('active');
-            toggle.classList.remove('active');
+         if (e.target === toggle || e.target.className === 'bar') {
+            toggle.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        } else if (e.target !== mainNav) {
+            toggle.classList.toggle('active');
+            mainNav.classList.toggle('active');
         }
     }
 
-    toggle.onclick = function () {
-        toggle.classList.toggle('active');
-        mainNav.classList.toggle('active')
-    }
+    // toggle.onclick = function () {
+    //     toggle.classList.toggle('active');
+    //     mainNav.classList.toggle('active')
+    // }
