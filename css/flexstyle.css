@@ -378,7 +378,7 @@ section .row-form {
 		margin-right: 175px;
 	}
 
-	#Back {
+	#back {
 		display: flex;
 		visibility: visible;
 		margin-top: 17px;
@@ -446,7 +446,7 @@ section .row-form {
 		padding-right: 22%;
 	}
 
-	#Back {
+	#back {
 		visibility: hidden;
 	}
 }
