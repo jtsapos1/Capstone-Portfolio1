@@ -12,9 +12,8 @@
             visitSite.classList.toggle('active');
             back.classList.toggle('active');
          } else if (e.target !== mainNav ) {
-            toggle.classList.toggle('active');
-            mainNav.classList.toggle('active');
-            
+            toggle.classList.remove('active');
+            mainNav.classList.remove('active');
         }
     }
 
