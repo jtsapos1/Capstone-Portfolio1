@@ -196,15 +196,10 @@ span {
 	padding-left: 1em;
 }
 
-.contact {
-	padding-top: 5%;
-	padding-left: 25%;
-	padding-right: 25%;
-}
 
-section .row-form {
+/* section .row-form {
 	margin: 25px;
-}
+} */
 
 .main-footer {
 	display: flex;
