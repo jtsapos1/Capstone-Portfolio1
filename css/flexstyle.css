@@ -448,7 +448,7 @@ span {
 	}
 
 	.contact {
-		margin: auto;
+		margin: 0 auto;
 		padding-left: 22%;
 		padding-right: 22%;
 	}
