@@ -453,6 +453,11 @@ span {
 		margin: auto;
 	}
 
+	p.interactive {
+		margin-bottom: 23px;
+
+	}
+
 	.tagline {
 		padding: 0px 400px 30px 40px;
 		border: 0;
